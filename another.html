@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerText & innerHTML</title>
+</head>
+<body>
+    <div id="my-details">
+        <!-- My details -->
+         <h1>My name: Shakil</h1>
+         <p>Age: 200years</p>
+    </div>
+
+
+
+    <div class="my-details">
+        <!-- This is a blank div -->
+        <!-- You are a good person -->
+
+    </div>
+
+
+    <script>
+        // innerText with child
+        const details = document.getElementById('my-details');
+        const text = details.innerText;
+        // console.log(text);
+
+
+        // innerHTML with child
+        const div = document.getElementById('my-details');
+        const child = div.innerHTML;
+        // console.log(child);
+
+
+        // innerText without child
+        const myDetails = document.getElementsByClassName('my-details');
+        // console.log(myDetails.innerText);
+
+        // innerHTML without child
+        const myData = document.getElementsByClassName('my-details');
+        // console.log(myData.innerHTML); 
+    </script>
+</body>
+</html>

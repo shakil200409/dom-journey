@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM niye naranari</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+            <h1>Introduction to DOM</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione hic ipsum quo beatae iste pariatur assumenda velit aperiam debitis explicabo necessitatibus nihil earum, error cum ex tempore facilis quisquam?</p>
+
+
+
+        <section>
+            <h1>What will I learn from Dom</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum corrupti assumenda quibusdam. Facere, consequatur eos.</p>
+            <ul>
+                <li>How to connect Js in a Html file</li>
+                <li>getElementByTagName, getElementById, getElementsByClassName</li>
+                <li>querySelector, querySelectors</li>
+                <li>getAttribute, setAttribute</li>
+                <li>How to add and remove css properties with JS</li>
+                <li>nodeList, htmlCollection, parentNode, childNode, createElement</li>
+                <li>appendChild</li>
+            </ul>
+
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruits-title" class="some-class random-class">Fruits I like to eat</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Mango</li>
+                <li>Jackfruit</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h1 id="learn-title">What should I do to learn DOM</h1>
+            <ul>
+                <li>Practice</li>
+                <li>Practice</li>
+                <li>Practice</li>
+                <li>Practice</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h1 id="place-title">Places I like to visit</h1>
+            <ul>
+                <li class="important-places large-text">SUndarban</li>
+                <li class="important-places large-text">Bandarban</li>
+                <li class="important-places large-text">Kataban</li>
+                <li class="other-places">GonoBhaban</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for(const li of liCollection){
+            // console.log(li.innerText);
+        }
+
+        const h1Headings = document.getElementsByTagName('h1');
+
+        for(const heading of h1Headings){
+            // console.log(heading.innerText);
+        }
+
+        const learnTitle = document.getElementById('learn-title');
+        learnTitle.innerText = 'Learn title is changed by JS';
+
+
+        const places = document.getElementsByClassName('important-places');
+        // console.log(places);
+        for(const place of places){
+            // console.log(place.innerText)
+        }
+
+
+
+        const placeTitle = document.querySelector('#place-title');
+        // placeTitle.innerText = 'Place title changed by JS';
+
+
+        const placeText = document.querySelector('.large-text')
+        // placeText.innerText = 'Hello';
+
+
+
+        // querySelectorAll
+
+        const someLi = document.querySelectorAll('.fruits-container li');
+        // console.log(someLi);
+        for(li of someLi){
+            // console.log(li.innerText);
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

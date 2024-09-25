@@ -1,0 +1,17 @@
+h1{
+    color: cornflowerblue;
+}
+p{
+    color: grey;
+}
+li{
+    color: lightcoral;
+}
+
+#learn-title{
+    color: black;
+}
+
+.important-places{
+    color: rgb(147, 13, 210);
+}
